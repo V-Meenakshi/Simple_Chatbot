@@ -6,7 +6,7 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 if "chat" not in st.session_state:
   st.session_state.chat=model.start_chat(history=[])
 st.title("MiniBot")
-st.write('welcome Minnies..")
+st.write("welcome Minnies..")
 if "messages" not in st.session_state:
   st.session_state.messages=[]
 for message in st.session_state.messages:
